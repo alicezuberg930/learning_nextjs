@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from '@/components/navbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['vietnamese'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+        <ToastContainer
+          closeOnClick
+          draggable
+          pauseOnHover
+          pauseOnFocusLoss
+        />
+      </body>
     </html>
   )
 }
