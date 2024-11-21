@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>

@@ -6,7 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import { toast } from 'react-toastify';
 import { mutate } from 'swr';
 
-function CreateModal() {
+const CreateModal: React.FC = () => {
     const [show, setShow] = useState<boolean>(false);
 
     const handleClose = () => setShow(false);
