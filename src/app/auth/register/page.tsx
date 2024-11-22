@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const RegisterPage = () => {
     return (
         <div className="py-4 min-h-screen bg-gray-100 text-gray-900 flex justify-center">
@@ -50,6 +52,12 @@ const RegisterPage = () => {
                                     <a href="#" className="border-b border-gray-500 border-dotted">
                                         Privacy Policy
                                     </a>
+                                </p>
+                                <p className="mt-2 text-xs text-gray-600 text-center">
+                                    Already have an account?
+                                    <Link href="/auth/login" className="border-b border-gray-500 border-dotted">
+                                        Login
+                                    </Link>
                                 </p>
                             </div>
                         </div>

@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "next.js debug",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run devffff",
+            "serverReadyAction": {
+                "action": "debugWithEdge",
+                "pattern": "listening on port ([0-9]+)",
+                "uriFormat": "http://localhost:%s",
+            },
+            "autoAttachChildProcesses": true
+        }
+    ]
+}
